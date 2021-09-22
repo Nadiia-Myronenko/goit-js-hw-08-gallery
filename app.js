@@ -63,61 +63,7 @@ const galleryItems = [
     description: 'Lighthouse Coast Sea',
   },
 ];
-/*
-const gallaryEl = document.querySelector('.js-gallery');
-const modalEl = document.querySelector('.lightbox');
-const lightboxImage = document.querySelector('.lightbox__image');
-const lightboxButton = document.querySelector('.lightbox__button');
 
-const cardsMarkup = createPicturesCardsMarkup(galleryItems);
-
-gallaryEl.insertAdjacentHTML('beforeend', cardsMarkup);
-gallaryEl.addEventListener('click', onGalleryClick);
-
-function createPicturesCardsMarkup(galleryItems) {
-  return galleryItems
-    .map(({ preview, original, description }) => {
-    return `
-  <li class="gallery__item">
-  <a
-    class="gallery__link"
-    href="${original}"
-  >
-    <img
-      class="gallery__image"
-      src="${preview}"
-      data-source="${original}"
-      alt="${description}"
-    />
-  </a>
-</li>
-  `
-  })
-    .join('');
-}
-
-function onGalleryClick(event) {
-  event.preventDefault();
-
-  if (!event.target.classList.contains('gallery__image')) {
-    return;
-  }
-
-  const source = event.target.dataset.source;
-  
-  modalEl.classList.add('is-open');
-
-  lightboxImage.src = source;
-
-  lightboxButton.addEventListener('click', onCrossClick);
-
-  function onCrossClick() {
-    modalEl.classList.remove('is-open');
-    lightboxImage.src = '';
-  }
-}
-
-*/
 const gallaryEl = document.querySelector('.js-gallery');
 const modalEl = document.querySelector('.lightbox');
 const lightboxImage = document.querySelector('.lightbox__image');
